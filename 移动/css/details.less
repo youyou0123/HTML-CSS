@@ -1,0 +1,120 @@
+//变量
+@num:40rem;
+
+.box{ 
+        /* 设置弹性盒模型 */ 
+        display: flex; 
+        display: -webkit-flex;  
+        /* vh 相对于可视区域的高度 */
+        min-height: 100vh;  
+        /* 设置主轴方向 */
+        flex-direction: column;  
+        /* 文字居中 */
+        text-align: center;  
+        /* 字体大小 */
+        font-size: 50px;  
+        /* 字体加粗 */
+        font-weight: bold;  
+    }  
+    .head{  
+        height: 100px;  
+        background-color: rgb(250, 79, 193);  
+        line-height: 100px;  
+        color: rgb(251, 252, 253);  
+        .list{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around;
+            
+            li{
+                width: 100 / @num;
+                height: 150 / @num;
+                margin-left:30/ @num;
+                margin-right:30/ @num;
+            }
+            span{
+                font-size: 48 / @num;
+            }
+        }
+    }  
+    .content{  
+        /* 设置居中  也可以写auto */
+        flex: 1;  
+        // background-color: rgb(116, 216, 255); 
+        .slideshow{
+            position: relative;
+            width: 100%;
+            height: 800 / @num;
+            // background: yellowgreen;
+            img{
+                width: 100%;
+                height: 600 / @num;
+                vertical-align: top;
+            }
+            span{
+                font-size: 38 / @num;
+                display: block;
+                text-align: left;
+                line-height: 60  / @num;
+            }
+        }
+        .shop{
+            width: 100%;
+            height: 300 / @num;
+            background: yellowgreen;
+            .img{
+                width: 100%;
+                height: 300 / @num;
+                vertical-align: top;
+            }
+        }
+        .list2{
+            width: 100%;
+            height: 400 / @num;
+            li{
+                width: 100%;
+                height: 100 / @num;
+                text-align: left;
+                font-size: 38 / @num;
+            }
+        }
+        .list3{
+            width: 100%;
+            // height: 400 / @num;
+            li{
+                img{
+                    width: 100%;
+                    height: 400 / @num;
+                    vertical-align: top;
+                }
+            }
+        }
+    }  
+    .foot{  
+        height: 150/ @num; 
+        // background-color: rgb(250, 79, 193);  
+        line-height: 100px;  
+        color: rgb(251, 252, 253); 
+        .foot-list{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+                li{
+                    width: 150 / @num;
+                    height: 150 / @num;
+                    // background-color:pink;
+                    img{
+                        width: 200 / @num;
+                        height: 150 / @num;
+                    }
+            }
+
+        } 
+    }  

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 引入全局样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <!-- 当前页样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/details.css"/>
+</head>
+<script>
+    // 获取像素比
+    var dpr = window.devicePixelRatio;
+    // 计算缩放比例
+    var ratio = 1 / dpr;
+    //将求出比例写入viewport
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+ratio+',minimum-scale='+ratio+',maximum-scale='+ratio+',user-scalable=no" />')
+    
+    //获取屏幕宽度
+    var dWidth = document.documentElement.clientWidth / 27;
+    // 计算公式： 屏幕宽度 / 10 = html字体大小
+    var html = document.getElementsByTagName('html')[0];
+    html.style.fontSize = dWidth + 'px';
+</script>
+<body>
+    <!-- 页面盒子 -->
+    <div class="box">
+        <!-- 头部区域 -->
+        <header class="head">
+            <ul class="list">
+                <li>
+                    <span>返回</span>
+                </li>
+                <li>
+                    <span>商品</span>
+                </li>
+                <li>
+                    <span>评价</span>
+                </li>
+                <li>
+                    <span>详情</span>
+                </li>
+            </ul>
+        </header>
+        <!-- 内容区域 -->
+        <section class="content">
+            <!-- 商品图片 -->
+            <div class="slideshow">
+                <img src="../img/11.png"/>
+                <a>
+                    <span>兰蔻奇迹香水臻享最爱兰蔻奇迹香水臻享最爱</span>
+                    <span>¥：99.00</span>
+                    <span>快递：免运费</span>
+                </a>
+            </div>
+            <!-- 商品店铺 -->
+            <div class="shop">
+                <img src="../img/23.png"/>
+            </div>
+            <!-- 商品详情 -->
+            <div class="details">
+                
+                <ul class="list2">
+                    <li>宝贝详情</li>
+                    <li>颜色：大地色</li>
+                    <li>质地：丝绒珠光</li>
+                    <li>净含量：15g</li>
+                    <li>上市时间：2018年秋</li>
+                </ul>
+                <ul class="list3">
+                        <li>
+                            <img src="../img/17.png"/>
+                        </li>
+                        <li>
+                            <img src="../img/18.png"/>
+                        </li>
+                        <li>
+                            <img src="../img/06.png"/>
+                        </li>
+                        <li>
+                            <img src="../img/08.png"/>
+                        </li>
+                    </ul>
+            </div>
+            
+        </section>
+        <!-- 底部区域 -->
+        <footer class="foot">
+            <ul class="foot-list">
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav02.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav03.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                        <a>
+                            <img src="../img/nav01.jpg"/>
+                        </a>
+                    </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

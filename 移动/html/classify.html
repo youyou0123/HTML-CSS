@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 引入全局样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <!-- 当前页样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/classify.css"/>
+</head>
+<script>
+    // 获取像素比
+    var dpr = window.devicePixelRatio;
+    // 计算缩放比例
+    var ratio = 1 / dpr;
+    //将求出比例写入viewport
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+ratio+',minimum-scale='+ratio+',maximum-scale='+ratio+',user-scalable=no" />')
+    
+    //获取屏幕宽度
+    var dWidth = document.documentElement.clientWidth / 27;
+    // 计算公式： 屏幕宽度 / 10 = html字体大小
+    var html = document.getElementsByTagName('html')[0];
+    html.style.fontSize = dWidth + 'px';
+</script>
+<body>
+    <!-- 页面盒子 -->
+    <div class="box">
+        <!-- 头部区域 -->
+        <header class="head">
+            <h1 class="logo"></h1>
+            <input class="input" type="text" name="user" id="" value="输入文字搜索" />
+            <a>分类</a>
+        </header>  
+        <!-- 内容区域 -->
+        <section class="content">
+            <!-- 轮播图区域 -->
+            <div class="slideshow">
+                <img src="../img/12.png"/>
+                
+            </div>
+            <!-- 活动区域 -->
+            <div class="activity">
+                <ul class="list">
+                    <li >
+                        <img src="../img/08.png"/>
+                    </li>
+                    <li >
+                        <img src="../img/11.png"/>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 热门推荐 -->
+            <div class="hot"> 
+                <h3>热门推荐</h3>
+                <ul class="list-2">
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                    <li>
+                        <img src="../img/04.png"/>
+                        <span>我是无辜的标题</span>
+                        <span>¥：500.00元</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 底部区域 -->
+        <footer class="foot">
+            <ul class="foot-list">
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav02.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav03.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                        <a>
+                            <img src="../img/nav01.jpg"/>
+                        </a>
+                    </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

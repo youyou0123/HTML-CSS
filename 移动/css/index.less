@@ -1,0 +1,260 @@
+//变量
+@num:40rem;
+
+.box{
+    /* 设置弹性盒模型 */ 
+    display: flex; 
+    display: -webkit-flex;  
+    /* vh 相对于可视区域的高度 */
+    min-height: 100vh;  
+    /* 设置主轴方向 */
+    flex-direction: column;  
+    /* 文字居中 */
+    text-align: center;  
+    /* 字体大小 */
+    font-size: 50px;  
+    /* 字体加粗 */
+    font-weight: bold;  
+
+    //  头部区域
+    .head{  
+        height: 150 / @num;   
+        // background-color: rgb(250, 79, 193);  
+        line-height: 100 / @num;   
+        color: rgb(251, 252, 253); 
+        .logo{
+            display: inline-block;
+            width: 102 / @num;;
+            height: 103 / @num;
+            background:url(../img/sprite.jpg) no-repeat 0 0;
+            margin:20/ @num 0 0 20/ @num;
+        }
+        a{
+            font-size: 42 / @num;
+            line-height:150 / @num;
+            margin-left:30 / @num;
+            vertical-align:top;
+        }
+        input{
+            width: 630 / @num;
+            height: 45 / @num;
+            text-align: center;
+            margin-top:50 / @num;
+            margin-left:30 / @num;
+            border-radius: 20 / @num;
+            display: inline-block;
+            vertical-align:top;
+        } 
+    }  
+    // 内容区域
+    .content{  
+        /* 设置居中  也可以写auto */
+        flex: 1;  
+        // background-color: rgb(116, 216, 255); 
+        .slideshow{
+            position: relative;
+            width: 100%;
+            height: 360 / @num;
+            background: yellowgreen url(../img/01.jpg);
+            
+        }
+        .slideshow-b{
+            position: absolute;
+            top:192 / @num;
+            left:0 / @num;
+            width: 100%;
+            height: 9 / @num;
+            text-align: center;
+            span{
+                display:inline-block;
+                // vertical-align: top;
+                width: 30 / @num;
+                height: 10 / @num;
+                background-color:#fff;
+                margin-top:140 / @num;
+            }
+        }
+        // 导航
+        .nav{
+            width: 100%;
+            height: 500 / @num;
+            // background-color: aqua;
+            margin:30 / @num 0 30/ @num 0;
+
+            .list{
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                align-content: space-around;
+                li{
+                    width: 200 / @num;
+                    height: 250 / @num;
+                    // background:pink;
+                    margin:0 30/ @num 0 30/ @num;
+                
+                    img{
+                        width: 200 / @num;
+                        height: 180 / @num;
+                        background:yellow;
+                        vertical-align: top;
+                    }
+                    span{
+                        vertical-align: top;
+                        text-align: center;
+                        line-height: 50 / @num; 
+                        font-size: 32 / @num;
+
+                    }
+                }
+            }
+        }
+        // 动态广告
+        .advertising{
+            width:100%;
+            height: 170 / @num;
+            .list2{
+                width:100%;
+                height: 180/ @num;
+                // background-color:blue;
+                background: url(../img/01.jpg) no-repeat ;
+                padding-bottom:30 / @num;
+            }
+        }
+        
+        // 品牌专区
+        .brand{
+            width:100%;
+            height: 750 / @num;
+            h3{
+                padding-top:30/ @num;
+            }
+
+            .list3{
+                width:100%;
+                height: 640 / @num;
+                // background-color:blue;
+                margin-bottom:30 / @num;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items:flex-start;
+                flex-wrap:wrap;
+                // padding-bottom:30/ @num;
+                li{
+                    width: 520 / @num;
+                    height: 300 / @num;
+                    background-color:blue;
+                    background: url(../img/01.jpg) no-repeat ;
+                    margin:10/ @num;
+                }
+        
+            }
+        }
+        // 活动区域
+        .list4{
+            width: 100%;
+            height: 670 / @num;
+            // background-color:red;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around;
+            .l4-1{
+                width: 720 / @num;
+                height: 300 / @num;
+                background-color:blue;
+                background: url(../img/02.jpg) no-repeat ;
+            }
+            .l4-2{
+                width: 350 / @num;
+                height: 300 / @num;
+                background-color:blue;
+                background: url(../img/02.jpg) no-repeat ;
+            }
+            .l4-3{
+                width: 350 / @num;
+                height: 300 / @num;
+                background-color:blue;
+                background: url(../img/02.jpg) no-repeat ;
+            }
+            .l4-4{
+                width: 350 / @num;
+                height: 300 / @num;
+                background-color:blue;
+                background: url(../img/02.jpg) no-repeat ;
+            }
+            .l4-5{
+                width: 350 / @num;
+                height: 300 / @num;
+                background-color:blue;
+                background: url(../img/02.jpg) no-repeat ;
+            }
+            
+        }
+        // 猜你喜欢
+        .like{
+            width:100%;
+            height: 870 / @num;
+
+            .list5{
+                width:100%;
+                height: 800 / @num;
+                // background-color:blue;
+                margin-bottom:30 / @num;
+                display:flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items:flex-start;
+                flex-wrap:wrap;
+                li{
+                    width: 520 / @num;
+                    height: 600 / @num;
+                    background-color:pink;
+                    margin:10/ @num;
+                    img{
+                        width: 520 / @num;
+                        height: 450 / @num; 
+                    }
+                    a{
+                        span{
+                            font-size: 24 / @num;
+                            color:#fff;
+                            line-height: 100 / @num; 
+                        }
+                    }
+                }
+        
+            }
+        }
+
+    }
+    .foot{  
+        height: 150 / @num; 
+        background-color: rgb(107, 250, 79);  
+        line-height: 100 / @num; 
+        color: rgb(251, 252, 253);  
+        .foot-list{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+                li{
+                    width: 150 / @num;
+                    height: 150 / @num;
+                    // background-color:pink;
+                    img{
+                        width: 150 / @num;
+                        height: 150 / @num;
+                    }
+            }
+
+        }
+    }  
+}

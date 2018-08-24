@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 引入全局样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/global.css"/>
+    <!-- 当前页样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+
+    <!-- 伪代码 
+        页面盒子 #box
+            头部区域 head
+            内容区域 content
+                轮播图区域 slideshow
+                导航区域 nav
+                广告区域 advertising
+                品牌专区 brand
+                活动专区 activity
+                猜你喜欢 like
+            底部区域 foot
+-->
+</head>
+
+
+<script>
+    // 获取像素比
+    var dpr = window.devicePixelRatio;
+    // 计算缩放比例
+    var ratio = 1 / dpr;
+    //将求出比例写入viewport
+    document.write('<meta name="viewport" content="width=device-width,initial-scale='+ratio+',minimum-scale='+ratio+',maximum-scale='+ratio+',user-scalable=no" />')
+    
+    //获取屏幕宽度
+    var dWidth = document.documentElement.clientWidth / 27;
+    // 计算公式： 屏幕宽度 / 10 = html字体大小
+    var html = document.getElementsByTagName('html')[0];
+    html.style.fontSize = dWidth + 'px';
+</script>
+<body>
+    <!-- 页面盒子 -->
+    <div class="box">
+        <!-- 头部区域 -->
+        <header class="head">
+            <h1 class="logo"></h1>
+            <input class="input" type="text" name="user" id="" value="输入文字搜索" />
+            <a>分类</a>
+        </header>  
+        <!-- 内容区域 -->
+        <section class="content">
+            <!-- 轮播图 -->
+            <div class="slideshow">
+                <!--轮播按钮 -->
+                <div class="slideshow-b">
+                    <span class=""></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- 导航区域 -->
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-2">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-3">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-4">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-2">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-3">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="item-4">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 动态广告 -->
+            <div class="advertising">
+                <ul class="list2">
+                    <li class="l2-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 品牌专区 -->
+            <div class="brand">
+                <h3>品牌专区</h3>
+                <ul class="list3">
+                    <li class="l3-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l3-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l3-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l3-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 活动专区 -->
+            <div class="activity">
+                <h3>活动专区</h3>
+                <!-- 活动1 -->
+                <ul class="list4">
+                    <li class="l4-1">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l4-2">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l4-3">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l4-4">
+                        <a>
+                            <img />
+                            <span>专辑</span>
+                        </a>
+                    </li>
+                    <li class="l4-5">
+                            <a>
+                                <img />
+                                <span>专辑</span>
+                            </a>
+                        </li>
+                </ul>
+                
+            </div>
+            <!-- 猜你喜欢 -->
+            <div class="like">
+                <h3>猜你喜欢</h3>
+                <ul class="list5">
+                    <li class="l5-1">
+                        <a>
+                            <img src="../img/01.jpg"/>
+                            <span>我是无辜又可爱的li标题</span>
+                            <div>
+                                <span>价格</span>
+                                <span>¥：50.00</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="l5-2">
+                        <a>
+                            <img src="../img/01.jpg"/>
+                            <div>
+                                <span>我是无辜又可爱的li标题</span>
+                                <div class="price">
+                                    <span>价格</span>
+                                    <span>¥：50.00</span>
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </section> 
+         <!-- 底部区域 -->
+        <footer  class="foot">
+            <ul class="foot-list">
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav02.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav03.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                    <a>
+                        <img src="../img/nav01.jpg"/>
+                    </a>
+                </li>
+                <li class="fl-1">
+                        <a>
+                            <img src="../img/nav01.jpg"/>
+                        </a>
+                    </li>
+            </ul>
+        </footer> 
+    </div>
+        
+</body>
+</html>

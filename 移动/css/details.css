@@ -1,0 +1,107 @@
+.box {
+  /* 设置弹性盒模型 */
+  display: flex;
+  display: -webkit-flex;
+  /* vh 相对于可视区域的高度 */
+  min-height: 100vh;
+  /* 设置主轴方向 */
+  flex-direction: column;
+  /* 文字居中 */
+  text-align: center;
+  /* 字体大小 */
+  font-size: 50px;
+  /* 字体加粗 */
+  font-weight: bold;
+}
+.head {
+  height: 100px;
+  background-color: #fa4fc1;
+  line-height: 100px;
+  color: #fbfcfd;
+}
+.head .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.head .list li {
+  width: 2.5rem;
+  height: 3.75rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.head .list span {
+  font-size: 1.2rem;
+}
+.content {
+  /* 设置居中  也可以写auto */
+  flex: 1;
+}
+.content .slideshow {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+.content .slideshow img {
+  width: 100%;
+  height: 15rem;
+  vertical-align: top;
+}
+.content .slideshow span {
+  font-size: 0.95rem;
+  display: block;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.content .shop {
+  width: 100%;
+  height: 7.5rem;
+  background: yellowgreen;
+}
+.content .shop .img {
+  width: 100%;
+  height: 7.5rem;
+  vertical-align: top;
+}
+.content .list2 {
+  width: 100%;
+  height: 10rem;
+}
+.content .list2 li {
+  width: 100%;
+  height: 2.5rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+.content .list3 {
+  width: 100%;
+}
+.content .list3 li img {
+  width: 100%;
+  height: 10rem;
+  vertical-align: top;
+}
+.foot {
+  height: 3.75rem;
+  line-height: 100px;
+  color: #fbfcfd;
+}
+.foot .foot-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.foot .foot-list li {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.foot .foot-list li img {
+  width: 5rem;
+  height: 3.75rem;
+}

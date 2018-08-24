@@ -1,0 +1,137 @@
+//变量
+@num:40rem;
+
+.box{ 
+        /* 设置弹性盒模型 */ 
+        display: flex; 
+        display: -webkit-flex;  
+        /* vh 相对于可视区域的高度 */
+        min-height: 100vh;  
+        /* 设置主轴方向 */
+        flex-direction: column;  
+        /* 文字居中 */
+        text-align: center;  
+        /* 字体大小 */
+        font-size: 50px;  
+        /* 字体加粗 */
+        font-weight: bold;  
+    }  
+    //  头部区域
+    .head{  
+        height: 150 / @num;   
+        // background-color: rgb(250, 79, 193);  
+        line-height: 100 / @num;   
+        color: rgb(251, 252, 253); 
+        .logo{
+            display: inline-block;
+            width: 102 / @num;;
+            height: 103 / @num;
+            background:url(../img/sprite.jpg) no-repeat 0 0;
+            margin:20/ @num 0 0 20/ @num;
+        }
+        a{
+            font-size: 42 / @num;
+            line-height:150 / @num;
+            margin-left:30 / @num;
+            vertical-align:top;
+        }
+        input{
+            width: 630 / @num;
+            height: 45 / @num;
+            text-align: center;
+            margin-top:50 / @num;
+            margin-left:30 / @num;
+            border-radius: 20 / @num;
+            display: inline-block;
+            vertical-align:top;
+        } 
+    }  
+    .content{  
+        /* 设置居中  也可以写auto */
+        flex: 1;  
+        // background-color: rgb(116, 216, 255); 
+        .slideshow{
+            width: 100%;
+            height: 400 / @num;
+            // background: yellowgreen;
+            margin-bottom:20 / @num;
+            img{
+                width: 100%;
+                height: 400 / @num;
+            }
+        }
+        .list{
+            width: 100%;
+            height: 300 / @num;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:flex-start;
+            flex-wrap:wrap;
+            align-content:space-around;
+            li{
+                width: 530 / @num;
+                height: 300 / @num;
+                // background: rgb(143, 88, 247); 
+                
+            }
+            img{
+                width: 530 / @num;
+                height: 300 / @num;
+                vertical-align: top;
+            }
+        }
+        .list-2{
+            width: 100%;
+            height: 1200 / @num;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:flex-start;
+            flex-wrap:wrap;
+            align-content:space-around;
+
+            li{
+                width: 330 / @num;
+                height: 400 / @num;
+                // background: rgb(143, 88, 247); 
+            }
+            img{
+                width: 330 / @num;
+                height: 300 / @num;
+                vertical-align: top;
+            }
+            span{
+                display: block;
+                font-size: 30 / @num;
+                line-height: 40 / @num;
+            }
+        }
+    }  
+
+
+    .foot{  
+        height: 150/ @num; 
+        // background-color: rgb(250, 79, 193);  
+        line-height: 100px;  
+        color: rgb(251, 252, 253); 
+        .foot-list{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: space-around;
+
+                li{
+                    width: 150 / @num;
+                    height: 150 / @num;
+                    // background-color:pink;
+                    img{
+                        width: 150 / @num;
+                        height: 150 / @num;
+                    }
+            }
+
+        } 
+    }  

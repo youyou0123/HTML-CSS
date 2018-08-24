@@ -1,0 +1,120 @@
+.box {
+  /* 设置弹性盒模型 */
+  display: flex;
+  display: -webkit-flex;
+  /* vh 相对于可视区域的高度 */
+  min-height: 100vh;
+  /* 设置主轴方向 */
+  flex-direction: column;
+  /* 文字居中 */
+  text-align: center;
+  /* 字体大小 */
+  font-size: 50px;
+  /* 字体加粗 */
+  font-weight: bold;
+}
+.head {
+  height: 3.75rem;
+  line-height: 2.5rem;
+  color: #fbfcfd;
+}
+.head .logo {
+  display: inline-block;
+  width: 2.55rem;
+  height: 2.575rem;
+  background: url(../img/sprite.jpg) no-repeat 0 0;
+  margin: 0.5rem 0 0 0.5rem;
+}
+.head a {
+  font-size: 1.05rem;
+  line-height: 3.75rem;
+  margin-left: 0.75rem;
+  vertical-align: top;
+}
+.head input {
+  width: 15.75rem;
+  height: 1.125rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  margin-left: 0.75rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.content {
+  /* 设置居中  也可以写auto */
+  flex: 1;
+}
+.content .slideshow {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+.content .slideshow img {
+  width: 100%;
+  height: 10rem;
+}
+.content .list {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.content .list li {
+  width: 13.25rem;
+  height: 7.5rem;
+}
+.content .list img {
+  width: 13.25rem;
+  height: 7.5rem;
+  vertical-align: top;
+}
+.content .list-2 {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.content .list-2 li {
+  width: 8.25rem;
+  height: 10rem;
+}
+.content .list-2 img {
+  width: 8.25rem;
+  height: 7.5rem;
+  vertical-align: top;
+}
+.content .list-2 span {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.foot {
+  height: 3.75rem;
+  line-height: 100px;
+  color: #fbfcfd;
+}
+.foot .foot-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.foot .foot-list li {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.foot .foot-list li img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
